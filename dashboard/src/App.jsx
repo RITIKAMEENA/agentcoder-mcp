@@ -22,8 +22,7 @@ function App() {
     try {
       setLoading(true);
       setOutput('Running AI tool...');
-
-      const response = await fetch('http://localhost:3000/api/run-tool', {
+const response = await fetch(`${API_BASE_URL}/api/run-tool`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
