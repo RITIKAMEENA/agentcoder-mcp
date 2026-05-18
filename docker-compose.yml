@@ -1,0 +1,17 @@
+services:
+  mongo:
+    image: mongo:7
+    container_name: agentcoder-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+  agentcoder-mcp:
+    build: ./server
+    container_name: agentcoder-mcp
+    env_file:
+      - ./server/.env
+    depends_on:
+      - mongo
+volumes:
+  mongo_data:

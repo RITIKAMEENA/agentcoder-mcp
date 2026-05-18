@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "agentcoder": {
+      "command": "node",
+      "args": ["/ABSOLUTE/PATH/TO/agentcoder-mcp-pro/server/dist/index.js"],
+      "env": {
+        "AI_PROVIDER": "gemini",
+        "GEMINI_API_KEY": "YOUR_KEY_HERE",
+        "MONGODB_URI": "mongodb://localhost:27017",
+        "MONGODB_DB": "agentcoder"
+      }
+    }
+  }
+}

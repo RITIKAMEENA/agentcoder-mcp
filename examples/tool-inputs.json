@@ -1,0 +1,5 @@
+{
+  "review_code": { "language": "javascript", "code": "function add(a,b){return a+b}" },
+  "fix_bug": { "language": "cpp", "errorMessage": "segmentation fault", "code": "// paste C++ code" },
+  "github_review_file": { "owner": "yourUser", "repo": "yourRepo", "path": "src/index.ts" }
+}
